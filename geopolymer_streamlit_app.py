@@ -167,7 +167,7 @@ def main():
     )
 
     st.title("🧱 Geopolymer Concrete Strength Studio")
-        st.markdown(
+    st.markdown(
         """
         <div style="
             display: inline-block;
@@ -184,7 +184,6 @@ def main():
         unsafe_allow_html=True,
     )
 
-
     st.markdown(
         """
         This app uses a trained **DeepGA–PSO** model to predict the
@@ -195,32 +194,6 @@ def main():
         - The app also provides **interactive plots** to explore the dataset
           and model behaviour.
         """
-    )
-        # ---- Developer / Affiliation card (sidebar) ----
-    st.sidebar.markdown("---")
-    st.sidebar.markdown(
-        """
-        <div style="
-            padding: 0.9rem 0.9rem;
-            border-radius: 14px;
-            border: 1px solid rgba(49, 51, 63, 0.18);
-            background: rgba(240, 242, 246, 0.85);
-        ">
-          <div style="font-size: 0.85rem; font-weight: 700; letter-spacing: 0.2px;">
-            👩‍💻 Developed by
-          </div>
-
-          <div style="font-size: 1.05rem; font-weight: 800; margin-top: 0.35rem;">
-            Neha Sharma
-          </div>
-
-          <div style="font-size: 0.82rem; line-height: 1.35; margin-top: 0.35rem; opacity: 0.9;">
-            Department of Civil Engineering, Chandigarh University,<br/>
-            Mohali, Punjab 140413, India
-          </div>
-        </div>
-        """,
-        unsafe_allow_html=True,
     )
 
     # ------------- Load model & data ------------- #
@@ -266,6 +239,32 @@ def main():
         - `results/DeepGA–PSO_model.pkl`  
         - `DataSet.xlsx`
         """
+    )
+    # ---- Developer / Affiliation card (sidebar) ----
+    st.sidebar.markdown("---")
+    st.sidebar.markdown(
+        """
+        <div style="
+            padding: 0.9rem 0.9rem;
+            border-radius: 14px;
+            border: 1px solid rgba(49, 51, 63, 0.18);
+            background: rgba(240, 242, 246, 0.85);
+        ">
+          <div style="font-size: 0.85rem; font-weight: 700; letter-spacing: 0.2px;">
+            👩‍💻 Developed by
+          </div>
+
+          <div style="font-size: 1.05rem; font-weight: 800; margin-top: 0.35rem;">
+            Neha Sharma
+          </div>
+
+          <div style="font-size: 0.82rem; line-height: 1.35; margin-top: 0.35rem; opacity: 0.9;">
+            Department of Civil Engineering, Chandigarh University,<br/>
+            Mohali, Punjab 140413, India
+          </div>
+        </div>
+        """,
+        unsafe_allow_html=True,
     )
 
     # ------------- Tabs ------------- #
@@ -515,5 +514,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
-
