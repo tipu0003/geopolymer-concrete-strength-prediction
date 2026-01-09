@@ -167,6 +167,23 @@ def main():
     )
 
     st.title("🧱 Geopolymer Concrete Strength Studio")
+        st.markdown(
+        """
+        <div style="
+            display: inline-block;
+            padding: 0.45rem 0.75rem;
+            border-radius: 999px;
+            border: 1px solid rgba(49, 51, 63, 0.18);
+            background: rgba(240, 242, 246, 0.65);
+            font-size: 0.85rem;
+        ">
+          <b>Developed by:</b> Neha Sharma &nbsp;|&nbsp;
+          Department of Civil Engineering, Chandigarh University, Mohali (Punjab), India
+        </div>
+        """,
+        unsafe_allow_html=True,
+    )
+
 
     st.markdown(
         """
@@ -498,4 +515,5 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
